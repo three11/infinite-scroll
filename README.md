@@ -19,7 +19,7 @@ yarn add @three11/infinite-scroll
 First, `import` the module:
 
 ```
-import '@three11/infinite-scroll';
+import { InfiniteScroll } from '@three11/infinite-scroll';
 ```
 
 Then initialize a new instance of the module:
