@@ -1,6 +1,6 @@
 import { debounce } from '@three11/debounce';
 
-export class LoadOnScroll {
+export class InfiniteScroll {
 	constructor(options = {}, doc = document, win = window) {
 		this.settings = {
 			element: '.js-infinite',
