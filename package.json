@@ -3,8 +3,8 @@
 	"version": "0.1.0",
 	"description": "Vanilla ES2017 module for loading more items as the user scrolls",
 	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+	"dependencies": {
+		"@three11/debounce": "^0.1.0"
 	},
 	"repository": {
 		"type": "git",
