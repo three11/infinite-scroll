@@ -1,6 +1,6 @@
-import { debounce } from '@three11/debounce';
+import debounce from '@three11/debounce';
 
-export class InfiniteScroll {
+export default class InfiniteScroll {
 	constructor(options = {}, doc = document, win = window) {
 		this.settings = {
 			element: '.js-infinite',
