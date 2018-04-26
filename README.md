@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/dt/@three11/infinite-scroll.svg)](https://www.npmjs.com/package/@three11/infinite-scroll)
+
 # Infinite Scroll
 
 A vanilla ES2017 module for loading more items as you scroll the page down.
