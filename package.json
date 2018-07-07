@@ -1,57 +1,57 @@
 {
-	"name": "@three11/infinite-scroll",
-	"version": "0.3.0",
-	"description": "Vanilla ES2017 module for loading more items as the user scrolls",
-	"main": "dist/index.js",
-	"scripts": {
-		"build": "webpack"
-	},
-	"dependencies": {
-		"@three11/debounce": "^0.3.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/three11/infinite-scroll.git"
-	},
-	"keywords": [
-		"Infinite",
-		"Scroll",
-		"AJAX",
-		"Load",
-		"More",
-		"JS",
-		"ES2017"
-	],
-	"authors": [
-		{
-			"name": "Three 11 Ltd",
-			"email": "hello@three-11.com",
-			"role": "Developer"
-		},
-		{
-			"name": "Alexander Panayotov",
-			"email": "alexander.panayotov@gmail.com",
-			"role": "Developer"
-		},
-		{
-			"name": "Atanas Atanasov",
-			"email": "scriptex.bg@gmail.com",
-			"role": "Developer"
-		}
-	],
-	"license": "GPL-3.0",
-	"bugs": {
-		"url": "https://github.com/three11/infinite-scroll/issues"
-	},
-	"homepage": "https://github.com/three11/infinite-scroll#readme",
-	"devDependencies": {
-		"@babel/cli": "^7.0.0-beta.51",
-		"@babel/core": "^7.0.0-beta.51",
-		"@babel/preset-env": "^7.0.0-beta.51",
-		"@babel/preset-stage-2": "^7.0.0-beta.51",
-		"babel-loader": "^8.0.0-beta",
-		"unminified-webpack-plugin": "^2.0.0",
-		"webpack": "^4.12.0",
-		"webpack-cli": "^3.0.8"
-	}
+  "name": "@three11/infinite-scroll",
+  "version": "0.4.0",
+  "description": "Vanilla ES2017 module for loading more items as the user scrolls",
+  "main": "dist/infinite-scroll.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@three11/debounce": "^0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/three11/infinite-scroll.git"
+  },
+  "keywords": [
+    "Infinite",
+    "Scroll",
+    "AJAX",
+    "Load",
+    "More",
+    "JS",
+    "ES2017"
+  ],
+  "authors": [
+    {
+      "name": "Three 11 Ltd",
+      "email": "hello@three-11.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Alexander Panayotov",
+      "email": "alexander.panayotov@gmail.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Atanas Atanasov",
+      "email": "scriptex.bg@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/three11/infinite-scroll/issues"
+  },
+  "homepage": "https://github.com/three11/infinite-scroll#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.52",
+    "@babel/core": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.0.0-beta.52",
+    "@babel/preset-stage-2": "^7.0.0-beta.52",
+    "babel-loader": "^8.0.0-beta",
+    "unminified-webpack-plugin": "^2.0.0",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
+  }
 }
