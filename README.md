@@ -3,7 +3,7 @@
 [![GitHub release](https://img.shields.io/github/release/three11/infinite-scroll.svg)](https://github.com/three11/infinite-scroll/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/three11/infinite-scroll.svg)](https://github.com/three11/infinite-scroll/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/three11/infinite-scroll.svg)](https://github.com/three11/infinite-scroll/commits/master)
-[![Github file size](https://img.shields.io/github/size/three11/infinite-scroll/dist/index.min.js.svg)](https://github.com/three11/infinite-scroll/)
+[![Github file size](https://img.shields.io/github/size/three11/infinite-scroll/dist/infinite-scroll.min.js.svg)](https://github.com/three11/infinite-scroll/)
 [![Build Status](https://travis-ci.org/three11/infinite-scroll.svg?branch=master)](https://travis-ci.org/three11/infinite-scroll)
 [![npm](https://img.shields.io/npm/dt/@three11/infinite-scroll.svg)](https://www.npmjs.com/package/@three11/infinite-scroll)
 [![npm](https://img.shields.io/npm/v/@three11/infinite-scroll.svg)](https://www.npmjs.com/package/@three11/infinite-scroll)
@@ -12,8 +12,10 @@
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/three11/infinite-scroll/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/three11/infinite-scroll/graphs/commit-activity)
 [![Greenkeeper badge](https://badges.greenkeeper.io/three11/infinite-scroll.svg)](https://greenkeeper.io/)
+[![dependencies Status](https://david-dm.org/three11/infinite-scroll/status.svg)](https://david-dm.org/three11/infinite-scroll)
+[![devDependencies Status](https://david-dm.org/three11/infinite-scroll/dev-status.svg)](https://david-dm.org/three11/infinite-scroll?type=dev)
 
-[![ForTheBadge built-with-love](https://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/three11/) 
+[![ForTheBadge built-with-love](https://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/three11/)
 
 # Infinite Scroll
 
@@ -21,13 +23,13 @@ A vanilla ES2017 module for loading more items as you scroll the page down.
 
 ## Install
 
-```console
+```sh
 npm i @three11/infinite-scroll
 ```
 
 or
 
-```console
+```sh
 yarn add @three11/infinite-scroll
 ```
 
@@ -36,7 +38,15 @@ or
 Just download this repository and link the files located in dist folder:
 
 ```html
-<script src="dist/index.min.js"></script>
+<script src="path-to-infinite-scroll/dist/infinite-scroll.min.js"></script>
+```
+
+or
+
+Include it from Unpkg CDN
+
+```html
+<script src="//unpkg.com/@three11/infinite-scroll/dist/infinite-scroll.min.js"></script>
 ```
 
 ## Usage
@@ -78,4 +88,3 @@ This is a function which runs after the items have been added to the DOM and acc
 
 GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
-
