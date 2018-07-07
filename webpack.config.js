@@ -2,9 +2,9 @@ const UnminifiedWebpackPlugin = require('unminified-webpack-plugin');
 
 module.exports = {
 	mode: 'production',
-	entry: './src/index.js',
+	entry: './src/infinite-scroll.js',
 	output: {
-		filename: 'index.min.js',
+		filename: 'infinite-scroll.min.js',
 		library: 'InfiniteScroll',
 		libraryTarget: 'umd',
 		libraryExport: 'default'
