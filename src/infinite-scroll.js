@@ -9,7 +9,7 @@ export default class InfiniteScroll {
 			disabledClass: 'disabled',
 			hiddenClass: 'hidden',
 			responseType: 'text/html',
-			onComplete(container) {},
+			onComplete(container) { },
 			...options
 		};
 		this.win = win;
