@@ -661,9 +661,9 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@three11/debounce@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@three11/debounce/-/debounce-0.4.0.tgz#169080d62a49684e81860ef2e76c3586351eae29"
+"@three11/debounce@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@three11/debounce/-/debounce-0.5.0.tgz#4b046884069eaabdb14a5a032b6ff51da7ef3ab3"
 
 "@webassemblyjs/ast@1.7.8":
   version "1.7.8"
