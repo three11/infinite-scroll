@@ -1,6 +1,6 @@
 {
   "name": "@three11/infinite-scroll",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Vanilla ES2017 module for loading more items as the user scrolls",
   "main": "dist/infinite-scroll.js",
   "scripts": {
