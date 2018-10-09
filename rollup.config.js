@@ -1,4 +1,6 @@
 import babel from 'rollup-plugin-babel';
+import resolve from 'rollup-plugin-node-resolve';
+import commonJS from 'rollup-plugin-commonjs'
 import { uglify } from 'rollup-plugin-uglify';
 
 export default {
@@ -15,6 +17,10 @@ export default {
 			presets: [
 				['@babel/env', { 'modules': false }]
 			]
+		}),
+		resolve(),
+		commonJS({
+			include: 'node_modules/**'
 		}),
 		uglify()
 	]
