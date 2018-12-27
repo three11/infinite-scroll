@@ -6,7 +6,6 @@
 [![npm](https://img.shields.io/npm/dt/@three11/infinite-scroll.svg)](https://www.npmjs.com/package/@three11/infinite-scroll)
 [![npm](https://img.shields.io/npm/v/@three11/infinite-scroll.svg)](https://www.npmjs.com/package/@three11/infinite-scroll)
 [![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/three11/infinite-scroll/README.md)](https://github.com/three11/infinite-scroll/)
-[![Greenkeeper badge](https://badges.greenkeeper.io/three11/infinite-scroll.svg)](https://greenkeeper.io/)
 
 # Infinite Scroll
 
