@@ -9,7 +9,7 @@ export default class InfiniteScroll {
 			disabledClass: 'disabled',
 			hiddenClass: 'hidden',
 			responseType: 'text/html',
-			onComplete(container) { },
+			onComplete(container) {},
 			...options
 		};
 		this.win = win;
@@ -57,12 +57,7 @@ export default class InfiniteScroll {
 	}
 
 	loadMore() {
-		if (
-			this.getScrollPosition() < this.getLoadingPosition() ||
-			this.isLoading ||
-			this.isAtEnd ||
-			!this.next
-		) {
+		if (this.getScrollPosition() < this.getLoadingPosition() || this.isLoading || this.isAtEnd || !this.next) {
 			return;
 		}
 
@@ -70,9 +65,7 @@ export default class InfiniteScroll {
 		this.next.classList.add(this.settings.disabledClass);
 
 		this.makeRequest(this.next.href, html => {
-			const items = [...html.querySelectorAll(this.settings.item)]
-				.map(item => item.outerHTML)
-				.join('');
+			const items = [...html.querySelectorAll(this.settings.item)].map(item => item.outerHTML).join('');
 			const nextUrl = html.querySelector(this.settings.next)
 				? html.querySelector(this.settings.next).getAttribute('href')
 				: '';
@@ -95,10 +88,7 @@ export default class InfiniteScroll {
 			if (request.status >= 200 && request.status < 400) {
 				const response = request.responseText;
 				const parser = new DOMParser();
-				const xmlDoc = parser.parseFromString(
-					response,
-					this.settings.responseType
-				);
+				const xmlDoc = parser.parseFromString(response, this.settings.responseType);
 
 				callback(xmlDoc);
 			}
