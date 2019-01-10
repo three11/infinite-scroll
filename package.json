@@ -1,57 +1,57 @@
 {
-  "name": "@three11/infinite-scroll",
-  "version": "0.6.0",
-  "description": "Vanilla ES2017 module for loading more items as the user scrolls",
-  "main": "dist/infinite-scroll.js",
-  "scripts": {
-    "build": "rollup -c"
-  },
-  "dependencies": {
-    "@three11/debounce": "^0.6.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/three11/infinite-scroll.git"
-  },
-  "keywords": [
-    "Infinite",
-    "Scroll",
-    "AJAX",
-    "Load",
-    "More",
-    "JS",
-    "ES2017"
-  ],
-  "authors": [
-    {
-      "name": "Three 11 Ltd",
-      "email": "hello@three-11.com",
-      "role": "Developer"
-    },
-    {
-      "name": "Alexander Panayotov",
-      "email": "alexander.panayotov@gmail.com",
-      "role": "Developer"
-    },
-    {
-      "name": "Atanas Atanasov",
-      "email": "scriptex.bg@gmail.com",
-      "role": "Developer"
-    }
-  ],
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/three11/infinite-scroll/issues"
-  },
-  "homepage": "https://github.com/three11/infinite-scroll#readme",
-  "devDependencies": {
-    "@babel/cli": "7.2.3",
-    "@babel/core": "7.2.2",
-    "@babel/preset-env": "7.2.3",
-    "rollup": "1.0.2",
-    "rollup-plugin-babel": "4.2.0",
-    "rollup-plugin-commonjs": "9.2.0",
-    "rollup-plugin-node-resolve": "4.0.0",
-    "rollup-plugin-uglify": "6.0.0"
-  }
+	"name": "@three11/infinite-scroll",
+	"version": "0.7.0",
+	"description": "Vanilla ES2017 module for loading more items as the user scrolls",
+	"main": "dist/infinite-scroll.min.js",
+	"scripts": {
+		"build": "rollup -c"
+	},
+	"dependencies": {
+		"@three11/debounce": "^0.6.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/three11/infinite-scroll.git"
+	},
+	"keywords": [
+		"Infinite",
+		"Scroll",
+		"AJAX",
+		"Load",
+		"More",
+		"JS",
+		"ES2017"
+	],
+	"authors": [
+		{
+			"name": "Three 11 Ltd",
+			"email": "hello@three-11.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Alexander Panayotov",
+			"email": "alexander.panayotov@gmail.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Atanas Atanasov",
+			"email": "scriptex.bg@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/three11/infinite-scroll/issues"
+	},
+	"homepage": "https://github.com/three11/infinite-scroll#readme",
+	"devDependencies": {
+		"@babel/cli": "7.2.3",
+		"@babel/core": "7.2.2",
+		"@babel/preset-env": "7.2.3",
+		"rollup": "1.0.2",
+		"rollup-plugin-babel": "4.2.0",
+		"rollup-plugin-commonjs": "9.2.0",
+		"rollup-plugin-node-resolve": "4.0.0",
+		"rollup-plugin-uglify": "6.0.0"
+	}
 }
