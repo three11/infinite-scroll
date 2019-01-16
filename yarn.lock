@@ -721,10 +721,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@three11/debounce@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@three11/debounce/-/debounce-0.6.0.tgz#d956b3d61a6408babfa25b2cf4f94e9cc0b50527"
-  integrity sha512-GLACazroy1DS48kgG3/OpcyRWv5nD3lsTiW5I21Gr7/SjrCZA4T5fDs+o7RKETK1FdR0BkOfPKBS3+xBcCqU7g==
+"@three11/debounce@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@three11/debounce/-/debounce-0.7.0.tgz#da223c5add8f27ce964a1d187fb4904aaf7c028f"
+  integrity sha512-Xy6aVvKNQ5EtWPz0e3+weU/D7G4+O0yd7Oxauq3F3AkEYGmB0lmtukxh0sqzNW/QRflAlCiOYdmq0S4xXFJuYw==
 
 "@types/estree@0.0.39":
   version "0.0.39"
