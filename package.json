@@ -48,9 +48,9 @@
 	},
 	"homepage": "https://github.com/three11/infinite-scroll#readme",
 	"devDependencies": {
-		"@babel/cli": "7.18.9",
-		"@babel/core": "7.18.9",
-		"@babel/preset-env": "7.18.9",
+		"@babel/cli": "7.18.10",
+		"@babel/core": "7.18.10",
+		"@babel/preset-env": "7.18.10",
 		"rollup": "2.77.2",
 		"rollup-plugin-babel": "4.4.0",
 		"rollup-plugin-commonjs": "10.1.0",
