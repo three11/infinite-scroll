@@ -1,7 +1,7 @@
 [![GitHub release](https://img.shields.io/github/release/three11/infinite-scroll.svg)](https://github.com/three11/infinite-scroll/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/three11/infinite-scroll.svg)](https://github.com/three11/infinite-scroll/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/three11/infinite-scroll.svg)](https://github.com/three11/infinite-scroll/commits/master)
-[![Github file size](https://img.shields.io/github/size/three11/infinite-scroll/dist/infinite-scroll.min.js.svg)](https://github.com/three11/infinite-scroll/)
+[![Github file size](https://img.shields.io/github/size/three11/infinite-scroll/dist/infinite-scroll.js.svg)](https://github.com/three11/infinite-scroll/)
 [![Build Status](https://travis-ci.org/three11/infinite-scroll.svg?branch=master)](https://travis-ci.org/three11/infinite-scroll)
 [![npm](https://img.shields.io/npm/dt/@three11/infinite-scroll.svg)](https://www.npmjs.com/package/@three11/infinite-scroll)
 [![npm](https://img.shields.io/npm/v/@three11/infinite-scroll.svg)](https://www.npmjs.com/package/@three11/infinite-scroll)
@@ -10,6 +10,8 @@
 # Infinite Scroll
 
 > A module for loading more items as you scroll the page down.
+
+See a [demo](https://three11-infinite-scroll.netlify.app/) and the [documentation](https://three11-infinite-scroll.netlify.app/docs.html).
 
 ## Install
 
