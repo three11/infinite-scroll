@@ -60,11 +60,11 @@ export class InfiniteScroll {
 		return offsetTop + clientHeight;
 	}
 
-	public getScrollPosition() {
+	public getScrollPosition(): number {
 		return this.win.pageYOffset + this.settings.scrollPosition;
 	}
 
-	public loadMore() {
+	public loadMore(): void {
 		if (this.getScrollPosition() < this.getLoadingPosition() || this.isLoading || this.isAtEnd || !this.next) {
 			return;
 		}
