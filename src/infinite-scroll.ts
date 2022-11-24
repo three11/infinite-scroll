@@ -61,7 +61,7 @@ export class InfiniteScroll {
 	}
 
 	public getScrollPosition(): number {
-		return this.win.pageYOffset + this.settings.scrollPosition;
+		return this.win.scrollY + this.settings.scrollPosition;
 	}
 
 	public loadMore(): void {
