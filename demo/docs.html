@@ -98,7 +98,7 @@ const infiniteScroll = new InfiniteScroll({
     disabledClass: 'is--disabled',
     hiddenClass: 'is--hidden',
     responseType: 'text/html',
-    scrollPosition: win.innerHeight - 200,
+    viewportTriggerPoint: win.innerHeight - 200,
     debounceTime: 100,
     onComplete(container) {
         console.log(container)

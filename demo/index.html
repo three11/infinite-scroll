@@ -178,7 +178,7 @@
 				new InfiniteScroll({
 					hiddenClass: 'is--hidden',
 					disabledClass: 'is--disabled',
-					scrollPosition: window.innerHeight - 100,
+					viewportTriggerPoint: window.innerHeight - 100,
 					onComplete: function (container, remoteDoc) {
 						const pagination = document.querySelector('.pagination');
 						const remotePagination = remoteDoc.querySelector('.pagination');

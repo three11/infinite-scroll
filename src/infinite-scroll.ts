@@ -9,8 +9,9 @@ export type InfiniteScrollOptions = {
 	disabledClass: string;
 	hiddenClass: string;
 	responseType: DOMParserSupportedType;
-	scrollPosition: number;
+	requestMethod: 'GET' | 'POST' | 'PUT' | 'PATCH';
 	debounceTime: number;
+	viewportTriggerPoint: number;
 	onComplete: null | ((container: HTMLElement, document: Document) => void);
 };
 
@@ -18,28 +19,32 @@ export class InfiniteScroll {
 	private doc: Document;
 	private win: Window & typeof globalThis;
 	private next: HTMLAnchorElement | null;
-	private settings: InfiniteScrollOptions;
+	private options: InfiniteScrollOptions;
 	private container: HTMLElement | null;
 	private isAtEnd: boolean;
 	private isLoading: boolean;
+	private defaultOptions: InfiniteScrollOptions = {
+		element: '.js-infinite',
+		next: '.js-infinite__next',
+		item: '.js-infinite__item',
+		disabledClass: 'disabled',
+		hiddenClass: 'hidden',
+		responseType: 'text/html',
+		requestMethod: 'GET',
+		debounceTime: 500,
+		onComplete: null,
+		viewportTriggerPoint: window.innerHeight / 2
+	};
 
 	constructor(options: Partial<InfiniteScrollOptions> = {}, doc = document, win = window) {
-		this.settings = {
-			element: '.js-infinite',
-			next: '.js-infinite__next',
-			item: '.js-infinite__item',
-			disabledClass: 'disabled',
-			hiddenClass: 'hidden',
-			responseType: 'text/html',
-			scrollPosition: win.innerHeight / 2,
-			debounceTime: 500,
-			onComplete: null,
+		this.options = {
+			...this.defaultOptions,
 			...options
 		};
 		this.win = win;
 		this.doc = doc;
-		this.container = this.doc.querySelector(this.settings.element);
-		this.next = this.doc.querySelector(this.settings.next);
+		this.container = this.doc.querySelector(this.options.element);
+		this.next = this.doc.querySelector(this.options.next);
 		this.isLoading = false;
 		this.isAtEnd = false;
 
@@ -61,7 +66,7 @@ export class InfiniteScroll {
 	}
 
 	public getScrollPosition(): number {
-		return this.win.scrollY + this.settings.scrollPosition;
+		return this.win.scrollY + this.options.viewportTriggerPoint;
 	}
 
 	public loadMore(): void {
@@ -69,7 +74,7 @@ export class InfiniteScroll {
 			return;
 		}
 
-		const { item, next, onComplete, disabledClass } = this.settings;
+		const { item, next, onComplete, disabledClass = this.defaultOptions.disabledClass } = this.options;
 
 		this.isLoading = true;
 		this.next.classList.add(disabledClass);
@@ -101,7 +106,7 @@ export class InfiniteScroll {
 
 	private hideNext(): InfiniteScroll {
 		if (this.next) {
-			this.next.classList.add(this.settings.hiddenClass);
+			this.next.classList.add(this.options.hiddenClass || this.defaultOptions.hiddenClass);
 		}
 
 		return this;
@@ -113,7 +118,7 @@ export class InfiniteScroll {
 		});
 
 		this.win.addEventListener('scroll', () => {
-			debounce(this.loadMore(), this.settings.debounceTime);
+			debounce(this.loadMore(), this.options.debounceTime);
 		});
 
 		return this;
@@ -122,13 +127,16 @@ export class InfiniteScroll {
 	private makeRequest(url: string, callback: (doc: Document) => void): void {
 		const request = new XMLHttpRequest();
 
-		request.open('GET', url);
+		request.open(this.options.requestMethod || this.defaultOptions.requestMethod, url);
 
 		request.onload = () => {
 			if (request.status >= 200 && request.status < 400) {
 				const response = request.responseText;
 				const parser = new DOMParser();
-				const xmlDoc = parser.parseFromString(response, this.settings.responseType);
+				const xmlDoc = parser.parseFromString(
+					response,
+					this.options.responseType || this.defaultOptions.responseType
+				);
 
 				callback(xmlDoc);
 			}
