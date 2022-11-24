@@ -9,7 +9,7 @@
 
 # Infinite Scroll
 
-A vanilla ES2017 module for loading more items as you scroll the page down.
+> A module for loading more items as you scroll the page down.
 
 ## Install
 
@@ -21,22 +21,6 @@ or
 
 ```sh
 yarn add @three11/infinite-scroll
-```
-
-or
-
-Just download this repository and link the files located in dist folder:
-
-```html
-<script src="path-to-infinite-scroll/dist/infinite-scroll.min.js"></script>
-```
-
-or
-
-Include it from Unpkg CDN
-
-```html
-<script src="//unpkg.com/@three11/infinite-scroll/dist/infinite-scroll.min.js"></script>
 ```
 
 ## Usage
@@ -57,22 +41,22 @@ const infiniteScroll = new InfiniteScroll();
 
 The default settings are:
 
-```javascript
-element       : '.js-infinite',       // The container of the instance
-next          : '.js-infinite__next', // The link to the next page
-item          : '.js-infinite__item', // The item
-disabledClass : 'disabled',           // Disabled class name
-hiddenClass   : 'hidden',             // Hidden class name
-responseType  : 'text/html',          // Type of the AJAX response
-```
+| Name                   | Type                          | Description                                                 | Default value          |
+| ---------------------- | ----------------------------- | ----------------------------------------------------------- | ---------------------- |
+| `element`              | string                        | CSS selector for the items container                        | '.js-infinite'         |
+| `next`                 | string                        | CSS selector for the next page link                         | '.js-infinite\_\_next' |
+| `item`                 | string                        | CSS selector for the item which will be loaded              | '.js-infinite\_\_item' |
+| `disabledClass`        | string                        | Class name to add to the next page link                     | 'disabled'             |
+| `hiddenClass`          | string                        | Class name to add to the next page link                     | 'hidden'               |
+| `responseType`         | DOMParserSupportedType        | Type of the AJAX response                                   | 'text/html'            |
+| `requestMethod`        | 'GET', 'POST', 'PUT', 'PATCH' | HTTP request type                                           | 'GET'                  |
+| `viewportTriggerPoint` | number                        | Position in the viewport after which the loading will start | window.innerHeight / 2 |
+| `debounceTime`         | number                        | Time to wait before triggering the next loading (in ms)     | 500                    |
+| `onComplete`           | function                      | A function to run after successful load                     | null                   |
 
-There is one callback:
+## Typescript
 
-```javascript
-onComplete(container) {}
-```
-
-This is a function which runs after the items have been added to the DOM and accepts a single argument `container` which refers to the element which contains the instance of the module.
+This module offers full Typescript support out of the box.
 
 ## License
 
