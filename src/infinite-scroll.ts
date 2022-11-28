@@ -1,5 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import debounce from '@three11/debounce';
 
 export type InfiniteScrollOptions = {
@@ -118,7 +116,7 @@ export class InfiniteScroll {
 		});
 
 		this.win.addEventListener('scroll', () => {
-			debounce(this.loadMore(), this.options.debounceTime);
+			debounce(this.loadMore() as unknown as (...args: unknown[]) => void, this.options.debounceTime);
 		});
 
 		return this;

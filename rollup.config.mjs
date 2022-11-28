@@ -1,5 +1,6 @@
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default {
 	input: 'src/infinite-scroll.ts',
@@ -10,5 +11,5 @@ export default {
 		exports: 'named',
 		sourcemap: true
 	},
-	plugins: [typescript(), commonjs()]
+	plugins: [typescript(), commonjs(), nodeResolve()]
 };

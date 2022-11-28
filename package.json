@@ -43,13 +43,14 @@
 		"build": "yarn clean && rollup -c && yarn copy"
 	},
 	"dependencies": {
-		"@three11/debounce": "1.0.0"
+		"@three11/debounce": "1.1.0"
 	},
 	"peerDependencies": {
 		"@three11/debounce": "^1"
 	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "23.0.3",
+		"@rollup/plugin-node-resolve": "15.0.1",
 		"@rollup/plugin-typescript": "10.0.0",
 		"@typescript-eslint/eslint-plugin": "5.44.0",
 		"@typescript-eslint/parser": "5.44.0",
