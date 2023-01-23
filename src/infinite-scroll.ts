@@ -78,10 +78,7 @@ export class InfiniteScroll {
 		this.next.classList.add(disabledClass);
 
 		this.makeRequest(this.next.href, (html: Document) => {
-			const items = Array.from(html.querySelectorAll(item))
-				.map(item => item.outerHTML)
-				.join('');
-
+			const items = Array.from(html.querySelectorAll(item));
 			const nextUrl = html.querySelector(next)?.getAttribute('href') || '';
 
 			if (this.next) {
@@ -91,7 +88,9 @@ export class InfiniteScroll {
 
 			const container = this.container as HTMLElement;
 
-			container.innerHTML += items;
+			for (const item of items) {
+				container.appendChild(item);
+			}
 
 			this.isLoading = false;
 			this.isAtEnd = nextUrl === '';

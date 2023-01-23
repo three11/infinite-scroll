@@ -1,6 +1,6 @@
 {
 	"name": "@three11/infinite-scroll",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Infinite scroll: Load more items as you scroll down",
 	"keywords": [
 		"Load more",
